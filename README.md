@@ -1,7 +1,7 @@
 # COVID-19 Google Mobility Ranking in Japan
-Google が提供する [COVID-19 Community Mobility Reports][https://www.google.com/covid19/mobility/]から国内都道府県の数値をソートしてグラフ生成を自動化します。
-元データはPDFで提供しているため、Kyle Mcdonaldによる[covid-mobility-data][https://github.com/kylemcdonald/covid-mobility-data]から自動抽出されたデータを利用しています。
-OCR処理があるため、提示されている数値に誤りが含まれている可能性があります。その点に関しては https://github.com/kylemcdonald/covid-mobility-data のAccuracy をご参照ください。
+Google が提供する [COVID-19 Community Mobility Reports](https://www.google.com/covid19/mobility/) から国内都道府県の数値をソートしてグラフ生成を自動化します。
+元データはPDFで提供しているため、Kyle Mcdonaldによる[covid-mobility-data](https://github.com/kylemcdonald/covid-mobility-data) から自動抽出されたデータを利用しています。
+OCR処理があるため、提示されている数値に誤りが含まれている可能性があります。その点に関しては [covid-mobility-data](https://github.com/kylemcdonald/covid-mobility-data) のAccuracy をご参照ください。
  
 # Result
 下記項目に応じて平時からの増加減少率を％表示で各都道府県ごとに順位ごとにグラフ化します。実行結果はそれぞれ
