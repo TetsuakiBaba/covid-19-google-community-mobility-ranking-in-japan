@@ -29,15 +29,9 @@ OCR処理があるため、提示されている数値に誤りが含まれて�
 # Requirement
 * python(>3.6)
 * matplotlib
- 
-# Installation
   
-```bash
-pip install huga_package
-```
- 
 # Usage
-国内全体のtsvファイルは[covid-mobility-data][https://github.com/kylemcdonald/covid-mobility-data]の手順に従って生成してください。生成したファイル名を
+国内全体のtsvファイルは[covid-mobility-data](https://github.com/kylemcdonald/covid-mobility-data)の手順に従って生成してください。生成したファイル名を
   2020-03-29_JP_Mobility_Report_en.pdf.tsv
 とした場合で説明します。生成したファイルが最新のもので日付が異なる場合はcompare.pyのスクリプトを修正してください。
 
