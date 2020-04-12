@@ -11,6 +11,57 @@ category_transit = []
 category_workplace = []
 category_residential = []
 
+name_dict = {
+    'Tokyo':'東京',
+    'Fukui':'福井',
+    'Chiba':'千葉',
+    'Kanagawa':'神奈川',
+    'Miyagi':'宮城',
+    'Osaka':'大阪',
+    'Saitama':'埼玉',
+    'Kyoto':'京都',
+    'Fukuoka':'福岡',
+    'Ibaraki':'茨城',    
+    'Toyama':'富山',
+    'Gifu':'岐阜',
+    'Aomori':'青森',
+    'Gunma':'群馬',
+    'Ishikawa':'石川',
+    'Okinawa':'沖縄',
+    'Tochigi':'栃木',
+    'Aichi':'愛知',
+    'Oita':'大分',
+    'Yamanashi':'山梨',
+    'Ehime':'愛媛',
+    'Kumamoto':'熊本',
+    'Hyogo':'兵庫',
+    'Nagano':'長野',
+    'Shizuoka':'静岡',
+    'Yamagata':'山形',
+    'Mie':'三重',
+    'Nagasaki':'長崎',
+    'Fukushima':'福島',
+    'Hiroshima':'広島',
+    'Hokkaido':'北海道',
+    'Kochi':'高知',
+    'Okayama':'岡山',
+    'Saga':'佐賀',
+    'Shiga':'滋賀',
+    'Japan':'日本',
+    'Kagawa':'香川',
+    'Miyazaki':'宮崎',
+    'Tokushima':'徳島',
+    'Akita':'秋田',
+    'Wakayama':'和歌山',
+    'Nara':'奈良',
+    'Niigata':'新潟',
+    'Iwate':'岩手',
+    'Kagoshima':'鹿児島',
+    'Yamaguchi':'山口',
+    'Tottori':'鳥取',
+    'Shimane':'島根'
+}
+
 def createRankingBarGraph(title, category, data):
     x = []
     y = []
@@ -95,34 +146,47 @@ sorted_category_transit = sorted(category_transit, key=lambda x : x[-1],reverse=
 sorted_category_workplace = sorted(category_workplace, key=lambda x : x[-1],reverse=False)
 sorted_category_residential = sorted(category_residential, key=lambda x : x[-1],reverse=True)
 
-f = open('tsvs/retail.tsv', "w")
+
+f = open('csvs/retail.csv', "w")
+print(*header, file=f, sep=",")
 for r in sorted_category_retail:
-    print(r, file=f)
+    r[0] = name_dict[r[0]]   
+    print(*r, file=f,sep=",")
 f.close();
 
-f = open('tsvs/grocery.tsv', "w")
+f = open('csvs/grocery.csv', "w")
+print(*header, file=f, sep=",")
 for r in sorted_category_grocery:
-    print(r, file=f)
+    r[0] = name_dict[r[0]]    
+    print(*r, file=f, sep=',')
 f.close();    
 
-f = open('tsvs/parks.tsv', "w")
+f = open('csvs/parks.csv', "w")
+print(*header, file=f, sep=",")
 for r in sorted_category_parks:
-    print(r, file=f)
+    r[0] = name_dict[r[0]]   
+    print(*r, file=f, sep=',')
 f.close();    
 
-f = open('tsvs/transit.tsv', "w")
+f = open('csvs/transit.csv', "w")
+print(*header, file=f, sep=",")
 for r in sorted_category_transit:
-    print(r, file=f)
+    r[0] = name_dict[r[0]]   
+    print(*r, file=f, sep=',')
 f.close();    
 
-f = open('tsvs/workplace.tsv', "w")
+f = open('csvs/workplace.csv', "w")
+print(*header, file=f, sep=",")
 for r in sorted_category_workplace:
-    print(r, file=f)
+    r[0] = name_dict[r[0]]   
+    print(*r, file=f, sep=',')
 f.close();    
 
-f = open('tsvs/residential.tsv', "w")
+f = open('csvs/residential.csv', "w")
+print(*header, file=f, sep=",")
 for r in sorted_category_residential:
-    print(r, file=f)
+    r[0] = name_dict[r[0]]   
+    print(*r, file=f, sep=',')
 f.close();    
 
 
