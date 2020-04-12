@@ -30,7 +30,7 @@ def createRankingBarGraph(title, category, data):
     #plt.show()
     plt.savefig('result_images/'+category+'.png')
 
-f = open('2020-03-29_JP_Mobility_Report_en.pdf.tsv', 'r')
+f = open('2020-04-05_JP_Mobility_Report_en.pdf.tsv', 'r')
 reader = csv.reader(f, delimiter="\t")
 
 
