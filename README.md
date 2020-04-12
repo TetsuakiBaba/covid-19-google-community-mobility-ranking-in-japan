@@ -29,6 +29,7 @@ OCR処理があるため、提示されている数値に誤りが含まれて�
 # Requirement
 * python(>3.6)
 * matplotlib
+* japanize-matplotlib
   
 # Usage
 国内全体のtsvファイルは[covid-mobility-data](https://github.com/kylemcdonald/covid-mobility-data)の手順に従って生成してください。生成したファイル名を
