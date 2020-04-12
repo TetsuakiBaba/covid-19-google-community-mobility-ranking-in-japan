@@ -1,6 +1,7 @@
 # coding: utf-8
 import csv
 import matplotlib.pyplot as plt
+import japanize_matplotlib
 import numpy as np
 
 category_name = ['Retail & recreation', 'Grocery & pharmacy', 'Parks', 'Transit stations', 'Workplace', 'Residential']
